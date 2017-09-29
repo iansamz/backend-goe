@@ -1,0 +1,10 @@
+.form-container {
+    position: relative;
+}
+
+.cont {
+    left: 30%;
+    min-width: 400px;
+    width: 100%;
+    padding: 30px 10% 30px 10%;
+}

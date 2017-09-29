@@ -1,0 +1,40 @@
+<div class="content table-responsive table-full-width">
+    <!-- <h3>Mufasa</h3>  -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let package of this.cs.packagesA ">
+                <!-- <td>{{this.cs.packagesA[{{payment.package}}]}}</td> -->
+                <td>{{package.value}}</td>
+                <td>{{package.name}}</td>
+                <td>{{package.type}}</td>
+                <!-- <td><button (click)="deletePayment(payment.$key)" class="btn btn-info btn-fill btn-wd">Delete</button></td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- <div class="content table-responsive table-full-width">
+  <h3>Volunteer</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Package</th>
+                <th>Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let payment of this.cs.paymentsDb | async">
+                <td>{{payment.package}}</td>
+                <td>{{payment.amount}}</td>
+                <td><button (click)="deletePayment(payment.$key)" class="btn btn-info btn-fill btn-wd">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

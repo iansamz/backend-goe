@@ -1,0 +1,18 @@
+.justifier {
+    display: flex;
+    justify-content: center;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+}
+
+.no-overflow {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.enquiries-container {
+    position: absolute!important;
+}

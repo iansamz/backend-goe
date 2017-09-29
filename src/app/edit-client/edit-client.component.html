@@ -1,0 +1,32 @@
+<div class="form-container">
+    <div class="cont">
+        <div class="col-lg-12 " style="text-align:center">
+            <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div>
+                            <h2>Edit Client</h2>
+                            <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+                                <div class="form-group row">
+                                    <label for="example-text-input" class="col-2 col-form-label">Name: {{this.cs.client.name}}</label>
+                                    <div class="col-10">
+                                        <input class="form-control" type="text" (ngModel)="name" value="name" name="name" placeholder="New Name" required>
+                                    </div>
+                                </div>
+                                <!-- <p>{{this.cs.client.name}}{{this.cs.client.email}}</p> -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address: {{this.cs.client.email}}</label>
+                                    <input (ngModel)="email" name="email" value="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" type="email" class="form-control" aria-describedby="emailHelp" placeholder="New email">
+                                </div>
+                                <button class="btn btn-warning btn-fill btn-wd" type="submit" [disabled]="!formData.valid">
+                                   +Save Changes
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <!-- <h4>Enquiry id: {{enquiry.$key}}</h4> -->
+                    <p class="category">General Enquiries</p>
+                </div>
+                <div class="container">
+                    <div class="content table-responsive table-full-width">
+                        <h4>Name: {{enquiry.name}}</h4>
+                        <h5>Email: {{enquiry.email}}</h5>
+                        <h5>Package: {{enquiry.package}}</h5>
+                        <h5>Info: <br> {{enquiry.info}}</h5>
+                        <!-- <p>
+                            {{enquiry | json}}
+                        </p> -->
+                        <button (click)="addClient(enquiry.email,enquiry.name,enquiry.email,enquiry.package)" class="btn btn-info btn-fill btn-wd">Add as Client</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
